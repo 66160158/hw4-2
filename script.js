@@ -88,7 +88,7 @@ function checkLowStock() {
 
 // ฟังก์ชันแสดงรายงานยอดขาย
 function generateSalesReport() {
-    let products = JSON.parse(localStorage.getItem("products")) || [];
+    let products = JSON.parse(localStorage.getItem("์name")) || [];
     let totalSales = products.reduce((sum, p) => sum + p.totalSales, 0);
     console.log(`ยอดขายรวมทั้งหมด: ${totalSales} บาท`);
 }

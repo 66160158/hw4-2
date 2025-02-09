@@ -15,7 +15,7 @@ input {
     max-width: 300px;
 }
 
-button {
+.btn-submit {
     padding: 10px;
     background-color: chartreuse;
     margin-top: 10px;
@@ -41,4 +41,8 @@ button {
 
 .product-item{
     background-color: darkkhaki;
+}
+
+#updateStock{
+    background-color: dodgerblue;
 }
