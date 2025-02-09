@@ -17,12 +17,14 @@ input {
 
 button {
     padding: 10px;
+    background-color: chartreuse;
     margin-top: 10px;
     cursor: pointer;
 }
 
 .hidden {
     padding: 10px;
+    background-color: crimson;
     margin-top: 10px;
     display: pointer;
 }
