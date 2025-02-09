@@ -3,24 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>โจทย์ข้อที่ 2</title>
+    <title>ระบบจัดการคลังสินค้าขนาดเล็ก</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
-
 <body>
 <h1>ระบบจัดการคลังสินค้าขนาดเล็ก</h1>
+<div class="blog-form">
     <form id="blog-form">
-        <input type="text" id="name" placeholder="ชื่อสินค้า">
-        <br>
-        <input type="text" id="price" placeholder="ราคาสินค้า">
-        <br>
-        <input type="text" id="inStock" placeholder="จำนวนคงเหลือ">
-        <br>
-        <input type="text" id="category" placeholder="ประเภทสินค้า">
-        <br>
-        <input type="text" id="totalSales" placeholder="ยอดขายทั้งหมด">
+        <input type="text" id="name" placeholder="ชื่อสินค้า" required>
+        <input type="number" id="price" placeholder="ราคาสินค้า" required>
+        <input type="number" id="inStock" placeholder="จำนวนคงเหลือ" required>
+        <input type="text" id="category" placeholder="ประเภทสินค้า" required>
+        <input type="number" id="totalSales" placeholder="ยอดขายทั้งหมด" required>
         <button type="submit" class="btn-submit">บันทึก</button>
         <button type="button" id="cancel-btn" class="hidden">ยกเลิก</button>
     </form>
+</div>
+<!-- รายการสินค้า -->
+<div id="product-list" class="product-list">
+    <!-- JavaScript จะเพิ่มสินค้าในนี้ -->
+</div>
+<script src="script.js"></script>
 </body>
 </html>
