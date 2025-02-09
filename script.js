@@ -110,6 +110,26 @@ function renderProducts() {
     `).join("");
 }
 
+function resetForm() {
+    document.getElementById("blog-form").reset();
+    console.log("รีเซ็ตข้อมูลที่กรอกไว้เรียบร้อย");
+}
+
+// ฟังก์ชันจัดการการส่งฟอร์ม
+document.getElementById("blog-form").addEventListener("cancel", function(event) {
+    event.preventDefault();
+    const productData = {
+        id: Date.now().toString(),
+        name: document.getElementById("name").value,
+        price: parseFloat(document.getElementById("price").value),
+        inStock: parseInt(document.getElementById("inStock").value),
+        category: document.getElementById("category").value,
+        totalSales: parseInt(document.getElementById("totalSales").value)
+    };
+    addProduct(productData);
+    resetForm(); // รีเซ็ตฟอร์มหลังจากเพิ่มสินค้า
+});
+
 // ฟังก์ชันจัดการการส่งฟอร์ม
 document.getElementById("blog-form").addEventListener("submit", function(event) {
     event.preventDefault();
