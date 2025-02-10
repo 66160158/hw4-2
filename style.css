@@ -43,6 +43,31 @@ input {
     background-color: darkkhaki;
 }
 
-#updateStock{
-    background-color: dodgerblue;
+.best-selling {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: blanchedalmond;
+    text-align: center;
 }
+
+.best-selling h2 {
+    color: #333;
+}
+
+.best-selling-list {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.product-card {
+    padding: 10px;
+    border-radius: 5px;
+    background: darksalmon;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-width: 150px;
+}
+
